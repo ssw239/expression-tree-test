@@ -56,6 +56,7 @@ namespace ExpressionTtreeExample
                 .Where(company => (company.ToLower() == "coho winery" || company.Length > 16))
                 .OrderBy(company => company)
                 .ToArray();
+
             foreach (string company in names)
             {
                 Console.WriteLine(company);
